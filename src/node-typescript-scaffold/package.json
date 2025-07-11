@@ -1,0 +1,31 @@
+{
+  "name": "node-typescript-scaffold-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for scaffolding Node.js TypeScript projects",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "node-typescript-scaffold-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "typescript",
+    "scaffolding",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.4.0"
+  }
+}
